@@ -30,7 +30,7 @@ const courseData = [
 
 export const resolvers = {
 	Query: {
-		allCourses: (_root, { searchTerm }) => {
+		allCourses: () => {
 			return courseData
 		},
 		course: (root, { id }) => {
