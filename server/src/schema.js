@@ -1,6 +1,6 @@
 const typeDefs = `
   type Course {
-    id: ID
+    id: String
     title: String
     author: String
     description: String
@@ -10,19 +10,19 @@ const typeDefs = `
   }
   type Query {
     allCourses(searchTerm: String): [Course]
-    course(id: ID!): Course
+    course(id: String!): Course
   }
   type Mutation {
     addCourse(
-      id: ID
+      id: String
       title: String!
       author: String!
       description: String
       topic: String!
       url: String
     ): Course
-    upvote(id: ID!): Course
-    downvote(id: ID!): Course
+    upvote(id: String!): Course
+    downvote(id: String!): Course
   }
 `
 export default typeDefs

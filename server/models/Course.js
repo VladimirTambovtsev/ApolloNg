@@ -13,4 +13,6 @@ const courseSchema = new Schema({
 	voteCount: { type: Number, default: 0 },
 })
 
+courseSchema.index({ '$**': 'text' })
+
 export default mongoose.model('Course', courseSchema)

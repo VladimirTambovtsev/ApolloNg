@@ -5,7 +5,10 @@ import typeDefs from './src/schema'
 import resolvers from './src/resolvers'
 
 mongoose
-	.connect('mongodb://localhost:27017/apollong', { useNewUrlParser: true })
+	.connect('mongodb://localhost:27017/apollong', {
+		useNewUrlParser: true,
+		useCreateIndex: true,
+	})
 	.then('MongoDB Connected')
 	.catch('Error Connecting to MongoDB')
 
