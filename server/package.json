@@ -27,9 +27,8 @@
 	},
 	"dependencies": {
 		"apollo-server": "^2.4.8",
-		"express": "^4.16.4",
 		"graphql": "^14.2.1",
-		"graphql-tools": "^4.0.4"
+		"mongoose": "^5.5.2"
 	},
 	"husky": {
 		"hooks": {

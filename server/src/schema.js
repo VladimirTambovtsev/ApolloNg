@@ -1,4 +1,4 @@
-export const typeDefs = `
+const typeDefs = `
   type Course {
     id: String
     title: String
@@ -24,3 +24,4 @@ export const typeDefs = `
     downvote(id: String!): Course
   }
 `
+export default typeDefs
