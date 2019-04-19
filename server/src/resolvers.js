@@ -30,7 +30,7 @@ const resolvers = {
 				{ returnNewDocument: true }
 			)
 		},
-		addCourse: (root, { title, author, description, topic, url }) => {
+		addCourse: async (root, { title, author, description, topic, url }) => {
 			const course = new Course({
 				title,
 				author,
@@ -38,7 +38,7 @@ const resolvers = {
 				topic,
 				url,
 			})
-			return course.save()
+			return await course.save()
 		},
 	},
 }
